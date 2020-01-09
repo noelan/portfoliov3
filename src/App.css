@@ -1,0 +1,677 @@
+@import url("https://fonts.googleapis.com/css?family=Bubblegum+Sans|Kaushan+Script|Righteous|Spectral&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans&display=swap");
+
+body {
+  background-color: rgb(220, 220, 220);
+  overflow-x: hidden;
+}
+
+/* my projetcs */
+
+.myProjects {
+  margin-top: 5rem;
+  height: 17rem;
+}
+.bandeau {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  top: -300px;
+  z-index: -100;
+  background-color: #4285f4;
+}
+
+.fadeImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  border: solid;
+  border-color: #6495ed;
+  border-width: 0.5px;
+}
+
+.card {
+  background-color: #fff;
+  background-clip: border-box;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 1.12);
+}
+
+.d-flex > button {
+  margin: 2rem;
+}
+
+/* Carousel */
+
+.myTitle {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  font-family: "Bubblegum Sans", cursive;
+
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: white;
+  white-space: nowrap;
+}
+
+.underTitle {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  font-family: "Righteous", cursive;
+  font-size: 3rem;
+  color: #6f6f6f;
+  transform: translate(-50%, -50%);
+}
+
+/* Slide 2 */
+
+.myTitleAboutMe {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-family: "Bubblegum Sans", cursive;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: white;
+  white-space: nowrap;
+}
+
+.textAboutMe {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  font-family: "Righteous", cursive;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.carouselSlide {
+  height: 67rem;
+}
+
+.slick-dots {
+  bottom: 60px !important;
+}
+
+/* Projects section */
+.myProject {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #2e2929;
+  position: relative;
+  position: relative;
+}
+
+.myImg {
+  border-radius: 5px;
+  border: solid;
+  border-color: #6495ed;
+  border-width: 0.1px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aPropos {
+  color: white;
+}
+
+.imgContainer {
+  width: 25rem;
+}
+.myProject > div > div > div > h3 {
+  color: white;
+  font-family: "Spectral", serif;
+  padding-bottom: 3rem;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.myProject > div > div > div > p {
+  color: white;
+  font-family: "Spectral", serif;
+  font-size: 1.5em;
+}
+
+/* usefull */
+
+.solid {
+  border: solid;
+}
+
+.hide {
+  display: none;
+}
+/* fonts */
+
+.bublegum {
+  font-family: "Bubblegum Sans", cursive;
+}
+
+.spectral {
+  font-family: "Spectral", serif;
+}
+
+.kaushan {
+  font-family: "Kaushan Script", cursive;
+}
+
+.righteous {
+  font-family: "Righteous", cursive;
+}
+
+/* color */
+
+.myWhite {
+  color: white;
+}
+
+.myCyan {
+  background-color: #00649e;
+}
+
+.myGrey {
+  background-color: #b4bdc3;
+}
+
+.myBlack {
+  background-color: rgb(51, 51, 51);
+}
+
+/* loader */
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* contact me */
+.contactMe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contactMe > p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Bubblegum Sans", cursive;
+}
+
+.contactMe > p > i {
+  margin: 1rem;
+}
+
+.contactMe > a > p > i {
+  margin-right: 1rem;
+}
+
+.contactMe > a {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1.2rem;
+  text-align: center;
+
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Bubblegum Sans", cursive;
+}
+/* Mes compétences */
+
+.mySkills {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Bubblegum Sans", cursive;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  color: white;
+}
+
+#SkillBox {
+  position: relative;
+  font-size: 10px;
+  font-family: "Indie Flower", cursive;
+  height: auto;
+  width: 70%;
+  margin: 40px auto;
+  top: 22%;
+  border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+#SkillBox img {
+  width: 20%;
+  height: 10%;
+  margin: auto 35%;
+  padding: 10px;
+}
+.SkillBar {
+  width: 90%;
+  height: 50px;
+  position: relative;
+  background: rgba(17, 17, 17, 0.3);
+  margin: 20px auto;
+}
+#Skill-HTML {
+  width: 99%;
+  animation: Animate-HTML 4s;
+  -webkit-animation: Animate-HTML 4s;
+  -moz-animation: Animate-HTML 4s;
+  -o-animation: Animate-HTML 4s;
+  height: 50px;
+  position: absolute;
+  background-color: #ea8564;
+}
+@keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 99%;
+  }
+}
+@-webkit-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 99%;
+  }
+}
+@-moz-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 99%;
+  }
+}
+@-o-keyframes Animate-HTML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 99%;
+  }
+}
+#Skill-CSS {
+  animation: Animate-CSS 5s;
+  -webkit-animation: Animate-CSS 5s;
+  -moz-animation: Animate-CSS 5s;
+  -o-animation: Animate-CSS 5s;
+  width: 70%;
+  height: 50px;
+  position: absolute;
+  background-color: #55a69f;
+}
+@keyframes Animate-CSS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@-webkit-keyframes Animate-CSS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@-moz-keyframes Animate-CSS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@-o-keyframes Animate-CSS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+#Skill-JS {
+  animation: Animate-JS 4s;
+  -webkit-animation: Animate-JS 4s;
+  -moz-animation: Animate-JS 4s;
+  -o-animation: Animate-JS 4s;
+  width: 65%;
+  height: 50px;
+  position: absolute;
+  background-color: #c44e45;
+}
+@keyframes Animate-JS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 65%;
+  }
+}
+@-webkit-keyframes Animate-JS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 65%;
+  }
+}
+@-moz-keyframes Animate-JS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 65%;
+  }
+}
+@-o-keyframes Animate-JS {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 65%;
+  }
+}
+#Skill-XML {
+  animation: Animate-XML 4s;
+  -webkit-animation: Animate-XML 4s;
+  -moz-animation: Animate-XML 4s;
+  -o-animation: Animate-XML 4s;
+  width: 60%;
+  height: 50px;
+  position: absolute;
+  background-color: #5aa669;
+}
+@keyframes Animate-XML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 60%;
+  }
+}
+@-webkit-keyframes Animate-XML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 60%;
+  }
+}
+@-moz-keyframes Animate-XML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 60%;
+  }
+}
+@-o-keyframes Animate-XML {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 60%;
+  }
+}
+#Skill-C {
+  animation: Animate-C 4s;
+  -webkit-animation: Animate-C 4s;
+  -moz-animation: Animate-C 4s;
+  -o-animation: Animate-C 4s;
+  width: 70%;
+  height: 50px;
+  position: absolute;
+  background-color: rgb(51, 51, 51);
+}
+@keyframes Animate-C {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@-webkit-keyframes Animate-C {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@-moz-keyframes Animate-C {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@-o-keyframes Animate-C {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+#Skill-JAVA {
+  animation: Animate-JAVA 4s;
+  -webkit-animation: Animate-JAVA 4s;
+  -moz-animation: Animate-JAVA 4s;
+  -o-animation: Animate-JAVA 4s;
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  background-color: #8e930c;
+}
+@keyframes Animate-JAVA {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 50%;
+  }
+}
+@-webkit-keyframes Animate-JAVA {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 50%;
+  }
+}
+@-moz-keyframes Animate-JAVA {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 50%;
+  }
+}
+@-o-keyframes Animate-JAVA {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 50%;
+  }
+}
+#Skill-PHP {
+  animation: Animate-PHP 4s;
+  -webkit-animation: Animate-PHP 4s;
+  -moz-animation: Animate-PHP 4s;
+  -o-animation: Animate-PHP 4s;
+  width: 70%;
+  height: 50px;
+  position: absolute;
+  background-color: #5a69a6;
+}
+@keyframes Animate-PHP {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@-webkit-keyframes Animate-PHP {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@-moz-keyframes Animate-PHP {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+@-o-keyframes Animate-PHP {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 70%;
+  }
+}
+#Skill-SQL {
+  animation: Animate-SQL 4s;
+  -webkit-animation: Animate-SQL 4s;
+  -moz-animation: Animate-SQL 4s;
+  -o-animation: Animate-SQL 4s;
+  width: 80%;
+  height: 50px;
+  position: absolute;
+  background-color: #23b1db;
+}
+@keyframes Animate-SQL {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 80%;
+  }
+}
+@-webkit-keyframes Animate-SQL {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 80%;
+  }
+}
+@-moz-keyframes Animate-SQL {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 80%;
+  }
+}
+@-o-keyframes Animate-SQL {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 80%;
+  }
+}
+#Skill-VBNET {
+  animation: Animate-VBNET 4s;
+  -webkit-animation: Animate-VBNET 4s;
+  -moz-animation: Animate-VBNET 4s;
+  -o-animation: Animate-VBNET 4s;
+  width: 35%;
+  height: 50px;
+  position: absolute;
+  background-color: #f8a51e;
+}
+@keyframes Animate-VBNET {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 35%;
+  }
+}
+@-webkit-keyframes Animate-VBNET {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 35%;
+  }
+}
+@-moz-keyframes Animate-VBNET {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 35%;
+  }
+}
+@-o-keyframes Animate-VBNET {
+  from {
+    width: 10px;
+  }
+  to {
+    width: 35%;
+  }
+}
+.Skill-Area {
+  z-index: 1;
+  float: left;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 15px;
+  text-shadow: none;
+  color: #fff;
+  font-family: Lato-Regular, sans-serif;
+  font-size: 18px;
+}
+.PercentText {
+  z-index: 3;
+  position: relative;
+  padding-right: 15px;
+  margin-top: 15px;
+  float: right;
+  text-shadow: none;
+  color: #fff;
+  font-family: Lato-Regular, sans-serif;
+  font-size: 18px;
+}
+
+/* SM SCREEN */
+@media screen and (max-width: 640px) {
+  .hideSm {
+    display: none;
+  }
+}
