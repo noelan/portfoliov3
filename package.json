@@ -2,7 +2,7 @@
   "name": "portfoliov3",
   "version": "0.1.0",
   "private": true,
-  "enginges": {
+  "engines": {
     "node": "10.18.0",
     "npm": "6.13.4"
   },
