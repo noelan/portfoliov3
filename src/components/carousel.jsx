@@ -185,10 +185,10 @@ const Carousel = props => {
                 {/* End Slide 3 */}
               </Slider>
             </Fade>
+            <MyProjects></MyProjects>
           </>
         )}
       </div>
-      <MyProjects></MyProjects>
     </>
   );
 };
