@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Bubblegum+Sans|Kaushan+Script|Righteous|Spectral&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans&display=swap");
 
-body {
+body,
+html {
   background-color: rgb(220, 220, 220);
   overflow-x: hidden;
+  height: 100%;
+  margin: 0;
 }
 
 /* my projetcs */
@@ -91,11 +94,16 @@ body {
 }
 
 .carouselSlide {
-  height: 67rem;
+  height: 100vh;
+  overflow: auto;
 }
 
 .slick-dots {
   bottom: 60px !important;
+}
+
+.slick-dots > li > button {
+  width: 50rem !important;
 }
 
 /* Projects section */
