@@ -37,8 +37,10 @@ const Carousel = props => {
     if (event === 1) {
       console.log("here");
       setHide1(false);
+      setHide2(true);
     } else if (event === 2) {
       setHide2(false);
+      setHide1(true);
     }
   };
 
@@ -150,60 +152,53 @@ const Carousel = props => {
                       </a>
                     </div>
                     <div className={hide2 ? "hide" : ""}>
-                      <Slide top></Slide>
                       <Fade right>
                         <div id="SkillBox">
-                          <h3 className="mySkills">Mes compétences</h3>
-
+                          <Slide bottom>
+                            <h3 className="mySkills">Mes compétences</h3>
+                          </Slide>
                           <div className="SkillBar">
                             <div id="Skill-C">
                               <span className="Skill-Area ">Symfony</span>
                               <span className="PercentText ">70%</span>
                             </div>
                           </div>
-
                           <div className="SkillBar">
                             <div id="Skill-XML">
                               <span className="Skill-Area ">React </span>
                               <span className="PercentText ">60%</span>
                             </div>
                           </div>
-
                           <div className="SkillBar">
                             <div id="Skill-JAVA">
                               <span className="Skill-Area ">Api platform </span>
                               <span className="PercentText ">50%</span>
                             </div>
                           </div>
-
                           <div className="SkillBar">
                             <div id="Skill-JS">
                               <span className="Skill-Area ">Javascript</span>
                               <span className="PercentText ">65%</span>
                             </div>
                           </div>
-
                           <div className="SkillBar">
                             <div id="Skill-PHP">
                               <span className="Skill-Area ">PHP </span>
                               <span className="PercentText ">70%</span>
                             </div>
                           </div>
-
                           <div className="SkillBar">
                             <div id="Skill-SQL">
                               <span className="Skill-Area ">SQL </span>
                               <span className="PercentText ">80%</span>
                             </div>
                           </div>
-
                           <div className="SkillBar">
                             <div id="Skill-HTML">
                               <span className="Skill-Area ">HTML</span>
                               <span className="PercentText ">99% ?</span>
                             </div>
                           </div>
-
                           <div className="SkillBar">
                             <div id="Skill-CSS">
                               <span className="Skill-Area ">CSS/CSS3</span>
